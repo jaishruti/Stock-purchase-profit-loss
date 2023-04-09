@@ -1,0 +1,21 @@
+*{
+    margin: auto;
+
+}
+.container-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 82, 14);    
+}
+.container-child{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+
+    background-color: burlywood;
+    align-items: center;
+    padding: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price profit or loss</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="container-parent">
+        <div class="container-child"> 
+            
+            <label for="Bought Price">
+                Bought Price </br>
+                <input type="number" name="price" />
+            </label>
+
+            <label for="Number of Stocks">
+                Number of Stocks(1-1000)</br>
+                <input type="range" value="1" name="price" id="points" min="1" max="1000" step="1" />
+            </label>
+
+            <div class="stock-details">
+                Select Stock
+                <select name="stock" id="stock-name" onchange="getCurrentPrice(this.value);"> 
+                    <option value="NIFTY 50" id="item-1"> NIFTY 50</option>
+                    <option value="NIFTY 100" id="item-2"> NIFTY 100</option>
+                    <option value="NIFTY ENERGY" id="item-3"> NIFTY ENERY</option>
+                    <option value="NIFTY PHARMA" id="item-4"> NIFTY PHARMA</option>
+
+                </select>
+                <article class="current-price-item">   
+                    <!-- <p class="current-price-label">Current Price </p>  -->
+                    <p id="current-price"></p>
+                </article>
+            </div>
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
